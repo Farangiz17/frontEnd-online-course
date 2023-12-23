@@ -741,7 +741,7 @@ export default function Home() {
                   </div>
                   {!leadStatus ? (
                     <button type="submit" className="btn btn-linear w-100">
-                      Ma'lumot olish
+                      Ro'yxatdan o'tish
                       <i className="fi-rr-arrow-small-right" />
                     </button>
                   ) : (

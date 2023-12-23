@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 import PortfolioFilter from "../components/elements/PortfolioFilter";
 import data from "../util/blogData";
 import Testimonial from "../components/slider/Testimonial";
-import { Alert, Button, Modal, Space } from "antd";
+import { Alert, Button, Modal, Space, message } from "antd";
 import { useRef, useState } from "react";
 import axios from "axios";
 import { BeatLoader } from "react-spinners";
@@ -16,7 +16,6 @@ export default function Home() {
   const nameRef = useRef();
   const phoneRef = useRef();
   const [leadStatus, setLeadStatus] = useState(false);
-  const [leadStatusAlert, setLeadStatusAlert] = useState(false);
 
   const handleSubmit = async (e) => {
     setLeadStatus(true);
@@ -39,14 +38,14 @@ export default function Home() {
       phoneRef.current.value = "";
       setIsModalOpen(false);
       setLeadStatus(false);
-      setLeadStatusAlert(true);
-      setTimeout(() => {
-        setLeadStatusAlert(false);
-      }, 2000);
-    }else{
-      setTimeout(() => {
-        setLeadStatusAlert(false);
-      }, 2000);
+      message.open({
+        type: 'success',
+        content: "So'rovingiz qabul qilindi",
+        className: 'custom-class',
+        style: {
+          marginTop: '20vh',
+        },
+      });
     }
   };
 
@@ -698,20 +697,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {leadStatusAlert && (
-              <Space
-                direction="vertical"
-                style={{
-                  width: "75%",
-                }}
-              >
-                <Alert
-                  message="So'rovingiz qabul qilindi"
-                  type="success"
-                  showIcon
-                />
-              </Space>
-            )}
             <Modal
               title="Ro'yxatdan o'tish"
               open={isModalOpen}

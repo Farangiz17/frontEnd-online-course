@@ -7,31 +7,31 @@ const Testimonial = () => {
 
     const data = [
         {
-            img: "1.webp",
+            img: "Hamidullo.png",
             name:"Hamidullo Ne'matullayev",
             level:'React Developer',
             description:"Soff Study o'quv markaziga omad tilayman! (Shogirt qancha yuksalgani bilan shogirtligicha qoladi"
         },
         {
-            img: "2.webp",
+            img: "Alisher.png",
             name:"Alisher Mirsaidov",
             level:'React Developer',
             description:"Juda ham maqul kelgan. Mentorlari xushmuomila"
         },
         {
-            img: "3.webp",
+            img: "James.png",
             name:"Jasur Boboqulov",
             level:'React Developer',
             description:"Eng zo'r jamoa ko'plab imkoniyatlar va yaxshi ustoz"
         },
         {
-            img: "4.webp",
+            img: "Nurulloh.png",
             name:"Nurulloh Ubaydullayev",
             level:'FrontEnd ( React | ReactNative ) Developer',
             description:"Dasturchi bo'lib o'z o'rnimni topishimda katta yordam bergan maskan"
         },
         {
-            img: "5.webp",
+            img: "B.png",
             name:"Mehroj Normamatov",
             level:'Primetech Solutions IT kompaniyasi asoschisi va direktori',
             description:"Zo'r imkoniyatlar maskani (dasturlashga kirib kelishimga sababchilardan biri desam adashmayman)"
@@ -84,8 +84,9 @@ const Testimonial = () => {
                 >
                     {data.map((item, i) => (
                         <SwiperSlide className="swiper-slide"  key={i}>
-                            <div className="card-testimonials bg-gray-850 border-gray-800 hover-up">
-                                <div className="box-author mb-20"><img src="assets/imgs/page/about/author.png" alt="Genz" />
+                            <div className="card-testimonials card-testimonials-copy bg-gray-850 border-gray-800 hover-up">
+                                <div className="box-author box-author-copy mb-20">
+                                    <img src={`assets/imgs/${item.img}`} alt="Genz" />
                                     <div className="author-info">
                                         <h6 className="color-gray-700">{item.name}</h6><span className="color-gray-700 text-sm">{item.level}</span>
                                     </div>

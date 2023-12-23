@@ -15,7 +15,7 @@ const Footer = () => {
 
           <div className="footer-bottom border-gray-800">
             <div className="row mt-80">
-              <div className="col-lg-5 text-center text-lg-start">
+              <div className="col-lg-5 col-xl-5 col-md-5 col-sm-5 col-12 text-center text-lg-start">
                 <p className="text-base color-white wow animate__animated animate__fadeIn">
                   <i class="fa-solid fa-phone-volume fa-shake"></i>{" "}
                   <Link className="copyright" href="tel:+998900026789">
@@ -23,7 +23,7 @@ const Footer = () => {
                   </Link>
                 </p>
               </div>
-              <div className="col-lg-7 text-center text-lg-end">
+              <div className="col-lg-7 col-xl-7 col-md-7 col-sm-7 col-12 text-center text-lg-end">
                 <div className="box-socials">
                   <div
                     className="d-inline-block mr-30 wow animate__animated animate__fadeIn"

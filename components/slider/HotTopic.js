@@ -17,22 +17,14 @@ const HotTopic = () => {
       img: "programmer_2.jpg",
     },
     {
-      title: "Intizomni saqlab dars qoidalariga to'liq amal qilgan o'quvchilar uchun",
+      title:
+        "Intizomni saqlab dars qoidalariga to'liq amal qilgan o'quvchilar uchun",
       article: 78,
       img: "programmer_3.jpg",
     },
     {
-      title: "Dasturlash sohasiga endi kirganlar uchun",
-      article: 38,
-      img: "programmer_1.jpg",
-    },
-    {
-      title: "Dasturchi bo'lishni oldiga aniq maqsad qo'yganlar uchun",
-      article: 63,
-      img: "programmer_2.jpg",
-    },
-    {
-      title: "Intizomni saqlab dars qoidalariga to'liq amal qilgan o'quvchilar uchun",
+      title:
+        "Intizomni saqlab dars qoidalariga to'liq amal qilgan o'quvchilar uchun",
       article: 78,
       img: "programmer_3.jpg",
     },
@@ -41,31 +33,31 @@ const HotTopic = () => {
   return (
     <>
       <div className="row">
-        <div className="col-lg-2">
+        <div className="col-lg-3">
           <h5
             className="mb-15 color-white wow animate__animated animate__fadeInUp"
             data-wow-delay="0s"
           >
-            Kimlar?
+            KURSIMIZ KIMLARGA TO’G’RI KELADI
           </h5>
-          <p
+          {/* <p
             className="color-gray-500 mb-20 wow animate__animated animate__fadeInUp"
             data-wow-delay=".3s"
           >
            Ushbu kurs kimlar uchun foydali bo'ladi?...
-          </p>
+          </p> */}
           <div className="box-buttons-slider position-relative wow animate__animated animate__zoomIn">
             <div className="swiper-button-prev swiper-button-prev-style-1" />
             <div className="swiper-button-next swiper-button-next-style-1" />
           </div>
         </div>
-        <div className="col-lg-10">
+        <div className="col-lg-9">
           <div className="box-swiper">
             <div className="swiper-container swiper-group-5">
               <Swiper
                 slidesPerView={4}
-                spaceBetween={30}
-                loop={true}
+                spaceBetween={10}
+                loop={false}
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
@@ -105,28 +97,26 @@ const HotTopic = () => {
                 {data.map((item, i) => (
                   <SwiperSlide className="swiper-slide" key={i}>
                     <div className="card-style-1">
-                      <Link href="/blog-archive">
-                        <div className="card-image">
-                          <img
+                      <div className="card-image">
+                        <img
                           style={{
-                            minHeight:'200px',
-                            objectFit:'cover',
-                            height:'100%'
+                            minHeight: "200px",
+                            objectFit: "cover",
+                            height: "100%",
                           }}
-                            src={`assets/imgs/${item.img}`}
-                            alt="Genz"
-                          />
-                          <div className="card-info">
-                            <div className="info-bottom">
-                              <h6 className="color-white mb-5">{item.title}</h6>
-                              <p className="text-xs color-gray-500">
+                          src={`assets/imgs/${item.img}`}
+                          alt="Genz"
+                        />
+                        <div className="card-info">
+                          <div className="info-bottom">
+                            <h6 className="color-white mb-5">{item.title}</h6>
+                            {/* <p className="text-xs color-gray-500">
                                 {" "}
                                Siz uddalaysiz!
-                              </p>
-                            </div>
+                              </p> */}
                           </div>
                         </div>
-                      </Link>
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}

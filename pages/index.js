@@ -39,11 +39,11 @@ export default function Home() {
       setIsModalOpen(false);
       setLeadStatus(false);
       message.open({
-        type: 'success',
+        type: "success",
         content: "So'rovingiz qabul qilindi",
-        className: 'custom-class',
+        className: "custom-class",
         style: {
-          marginTop: '20vh',
+          marginTop: "20vh",
         },
       });
     }
@@ -89,7 +89,10 @@ export default function Home() {
                       <span className="text-sm-bold color-gray-600 wow animate__animated animate__fadeInUp">
                         Salom barchaga!
                       </span>
-                      <h1 className="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp">
+                      <h1
+                        style={{ fontSize: "40px" }}
+                        className="color-gray-50 mt-20 mb-20 wow animate__animated animate__fadeInUp"
+                      >
                         Men
                         <Typewriter
                           options={{
@@ -97,7 +100,7 @@ export default function Home() {
                             strings: ["Zufarbek", "Dasturchi", "Mentor"],
                             autoStart: true,
                             loop: true,
-                            fontSize: "17px",
+                            // fontSize: "18px",
                           }}
                         />
                       </h1>
@@ -117,7 +120,7 @@ export default function Home() {
                               href="#tarif"
                               className="btn btn-linear btn-arrow-right w-100"
                             >
-                              Bog'lanish
+                              KURSNI XARID QILISH
                               <i className="fi-rr-arrow-small-right" />
                             </Link>
                           </form>
@@ -208,12 +211,9 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <h2 className="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">
+                <h2 className="color-linear d-inline-block mt-40 wow animate__animated animate__fadeInUp">
                   Kursda nimalar o'rganasiz?
                 </h2>
-                <p className="text-lg color-gray-500 wow animate__animated animate__fadeInUp">
-                  Batafsil
-                </p>
                 <PortfolioFilter col={4} />
 
                 <div className="text-center mb-50">
@@ -228,13 +228,19 @@ export default function Home() {
                 <h2 className="color-linear mb-30 d-inline-block mb-10 wow animate__animated animate__fadeInUp">
                   Kurs dasturi
                 </h2>
-                <div className="box-features bg-gray-850 border-gray-800">
+                <div className="box-features bg-gray-850 border-gray-800 wow animate__animated animate__fadeInUp">
                   <div className="row">
                     <div
                       className="col-lg-4 col-md-6 mb-50 wow animate__animated animate__fadeIn center__cart"
                       data-wow-delay="0s"
                     >
-                      <span className="item-icon bg-gray-950 icon-motion" />
+                      {/* <span className="item-icon bg-gray-950 icon-motion" /> */}
+                      <img
+                        style={{ width: "auto" }}
+                        className="course-modul-image"
+                        src="/assets/imgs/kirish.png"
+                        alt=""
+                      />
                       <h5 className="color-white mb-15">
                         Boshlang'ich tushunchalar
                       </h5>
@@ -243,14 +249,22 @@ export default function Home() {
                       className="col-lg-4 center__cart col-md-6 mb-50 wow animate__animated animate__fadeIn"
                       data-wow-delay="0.1s"
                     >
-                      <span className="item-icon bg-gray-950 icon-ui" />
+                      <img
+                        className="course-modul-image"
+                        src="/assets/imgs/html-css.png"
+                        alt=""
+                      />
                       <h5 className="color-white mb-15">HTML & CSS</h5>
                     </div>
                     <div
                       className="col-lg-4 center__cart col-md-6 mb-50 wow animate__animated animate__fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      <span className="item-icon bg-gray-950 icon-branding" />
+                      <img
+                        className="course-modul-image"
+                        src="/assets/imgs/bootstrap-sass.png"
+                        alt=""
+                      />
                       <h5 className="color-white mb-15">
                         HTML & CSS & Bootstrap & SASS
                       </h5>
@@ -259,14 +273,22 @@ export default function Home() {
                       className="col-lg-4 center__cart col-md-6 mb-50 wow animate__animated animate__fadeIn"
                       data-wow-delay="0s"
                     >
-                      <span className="item-icon bg-gray-950 icon-product" />
+                      <img
+                        className="course-modul-image"
+                        src="/assets/imgs/js.png"
+                        alt=""
+                      />
                       <h5 className="color-white mb-15">JavaScript</h5>
                     </div>
                     <div
                       className="col-lg-4 col-md-6 center__cart mb-50 wow animate__animated animate__fadeIn"
                       data-wow-delay="0.1s"
                     >
-                      <span className="item-icon bg-gray-950 icon-key" />
+                      <img
+                        className="course-modul-image"
+                        src="/assets/imgs/domm.png"
+                        alt=""
+                      />
                       <h5 className="color-white mb-15">
                         Javascript & DOM & OOP
                       </h5>
@@ -275,28 +297,46 @@ export default function Home() {
                       className="col-lg-4 col-md-6 center__cart mb-50 wow animate__animated animate__fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      <span className="item-icon bg-gray-950 icon-social" />
+                      <img
+                        className="course-modul-image"
+                        src="/assets/imgs/git.png"
+                        alt=""
+                      />
+
                       <h5 className="color-white mb-15">NPM & Git & GitHub</h5>
                     </div>
                     <div
                       className="col-lg-4 col-md-6 mb-50 center__cart wow animate__animated animate__fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      <span className="item-icon bg-gray-950 icon-ui" />
+                      <img
+                        className="course-modul-image"
+                        src="/assets/imgs/scale_1200.png"
+                        alt="soffstudy course modul image"
+                      />
+
                       <h5 className="color-white mb-15">React.js</h5>
                     </div>
                     <div
                       className="col-lg-4 col-md-6 mb-50 center__cart wow animate__animated animate__fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      <span className="item-icon bg-gray-950 icon-social" />
+                        <img
+                        className="course-modul-image"
+                        src="/assets/imgs/nexttt.png"
+                        alt="soffstudy course modul image"
+                      />
                       <h5 className="color-white mb-15">React.js & Next.js</h5>
                     </div>
                     <div
                       className="col-lg-4 col-md-6 mb-50 center__cart wow animate__animated animate__fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      <span className="item-icon bg-gray-950 icon-key" />
+                       <img
+                        className="course-modul-image"
+                        src="/assets/imgs/practic.png"
+                        alt="soffstudy course modul image"
+                      />
                       <h5 className="color-white mb-15">
                         Ishga kirishga tayyorgarlik
                       </h5>
@@ -331,51 +371,31 @@ export default function Home() {
                 {/* Dars jarayoni qanday olib boriladi */}
 
                 <h3 className="color-linear mb-30 d-inline-block mb-10 wow animate__animated animate__fadeInUp">
-                  Dars jarayoni qanday olib boriladi?
+                  Ta'lim jarayoni qanday olib boriladi?
                 </h3>
-                <div className="row mt-50 mb-10">
+                <div className="row mt-10 mb-10">
                   {data.map((item, i) => (
-                    <div className="col-lg-4" key={i}>
-                      <div className="card-blog-1 hover-up wow animate__animated animate__fadeIn">
-                        <div className="card-image mb-20">
-                          <Link className="post-type" href="#" />
-                          <img src={`assets/imgs/${item.img}`} alt="SoffStudy - frontend dasturlash kursi" />
+                    <div className="col-lg-6" key={i} >
+                      <div className="card-blog-1  hover-up wow animate__animated animate__fadeIn">
+                        <div className="card-image">
+                          <img
+                            src={`assets/imgs/${item.img}`}
+                            alt="SoffStudy - frontend dasturlash kursi"
+                          />
                         </div>
                         <div className="card-info">
-                          <h6 className="color-white mt-20">{item.title}</h6>
-                          <div className="row align-items-center mt-25">
-                            <div className="col-7">
-                              <div className="box-author">
-                                <img
-                                  src={`assets/imgs/page/homepage1/${item.author}`}
-                                  alt="SoffStudy - frontend dasturlash kursi"
-                                />
-                                <div className="author-info">
-                                  <h6 className="color-gray-700">
-                                    {item.authorTitle}
-                                  </h6>
-                                  <span className="color-gray-700 text-sm">
-                                    {item.date}
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-5 text-end">
-                              <Link
-                                className="readmore color-gray-500 text-sm"
-                                href="#"
-                              >
-                                <span>Read more</span>
-                              </Link>
-                            </div>
+                          <div className="cadr-info-title">
+                            <span>01</span>
+                            <p className="color-white" >Sarlavhasi</p>
                           </div>
+                          <h6 className="color-white">{item.title}</h6>
                         </div>
                       </div>
                     </div>
                   ))}
                 </div>
                 {/* Natijalar */}
-                <h3 className="color-linear mb-30 d-inline-block mb-10 wow animate__animated animate__fadeInUp">
+                <h3 className="color-linear mb-30 d-inline-block mt-40 wow animate__animated animate__fadeInUp">
                   O'quvchilarimning natijalari
                 </h3>
                 <div className="box-testimonials mb-150animate__fadeIn mb-100">
@@ -531,7 +551,9 @@ export default function Home() {
                         </Button>
                       </div>
                       <div className="card-pricing-bottom">
-                        <h6 className="color-white mb-25">Nimalar olasiz:</h6>
+                        <h6 className="color-white mb-25">
+                          Nimalarga ega bo'lasiz
+                        </h6>
                         <ul className="list-checked">
                           <li>To'liq video darslar Amaliyotlar</li>
                           <li>Amaliyotlar</li>
@@ -547,7 +569,7 @@ export default function Home() {
                   >
                     <div className="card-pricing border-gray-800 bg-gray-850 mb-30">
                       <label className="lbl-success text-base color-gray-900">
-                        Popular
+                        Ommabop
                       </label>
                       <div className="card-pricing-top border-gray-800">
                         <h3 className="color-white mb-10">Premium tarif</h3>
@@ -565,7 +587,9 @@ export default function Home() {
                         </Button>
                       </div>
                       <div className="card-pricing-bottom">
-                        <h6 className="color-white mb-25">Nimalar olasiz:</h6>
+                        <h6 className="color-white mb-25">
+                          Nimalarga ega bo'lasiz
+                        </h6>
                         <ul className="list-checked">
                           <li>To'liq video darslar Amaliyotlar</li>
                           <li>Amaliyotlar</li>
@@ -604,7 +628,9 @@ export default function Home() {
                         </Button>
                       </div>
                       <div className="card-pricing-bottom">
-                        <h6 className="color-white mb-25">What you get:</h6>
+                        <h6 className="color-white mb-25">
+                          Nimalarga ega bo'lasiz
+                        </h6>
                         <ul className="list-checked">
                           <li>To'liq video darslar Amaliyotlar</li>
                           <li>Amaliyotlar</li>
@@ -627,7 +653,7 @@ export default function Home() {
                     Kursdan so'ng sizni ushbu natijalar kutadi:
                   </h2>
                 </div>
-                <div className="row mb-30">
+                <div className="row mb-30 wow animate__animated animate__zoomIn"  >
                   <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
                     <div className="cart-style-result" data-wow-delay="0s">
                       <div
@@ -703,8 +729,8 @@ export default function Home() {
               onOk={handleOk}
               onCancel={handleCancel}
             >
-              <div className="inner-subscriber bg-gray-800">
-                <form onSubmit={handleSubmit}>
+              <div className="inner-subscriber ">
+                <form onSubmit={handleSubmit} className="text-center mb-2" >
                   <div className="form-group">
                     <input
                       className="form-control bg-gray-850 border-gray-800"
@@ -712,20 +738,22 @@ export default function Home() {
                       ref={nameRef}
                       placeholder="Ismingiz"
                       required
+                      name="lastName"
                     />
                   </div>
                   <div className=" form-group form-tel">
                     <span>+998</span>
                     <input
                       className="form-control bg-gray-850 border-gray-800 form-tel-input"
-                      type='text'
+                      type="text"
                       ref={phoneRef}
                       maxLength="9"
                       required
+                      name="number"
                     />
                   </div>
                   {!leadStatus ? (
-                    <button type="submit" className="btn btn-linear w-100">
+                    <button type="submit" className="btn btn-linear w-50 ">
                       Ro'yxatdan o'tish
                       <i className="fi-rr-arrow-small-right" />
                     </button>

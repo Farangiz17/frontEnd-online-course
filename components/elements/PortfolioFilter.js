@@ -54,7 +54,7 @@ const PortfolioFilter = ({col, show}) => {
 
     return (
         <>
-            <div className="mt-70 mb-50">
+            <div className="mt-40 mb-50">
                 <div className="row">
                     {projects.slice(0,show).map(item =>
                         item.filtered === true ?
@@ -65,6 +65,7 @@ const PortfolioFilter = ({col, show}) => {
                                             <div className="card-image">
                                                 <Link className="link-post" href="#">
                                                     <img src={`assets/imgs/page/${item.img}`} alt="Genz" />
+                                                   <div className="bac" ></div>
                                                     <div className="card-info card-bg-2">
                                                         <div className="info-bottom mb-15">
                                                             <h6 className="color-white mb-10">{item.name}</h6>

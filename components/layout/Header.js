@@ -43,7 +43,7 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                 className="btn btn-linear d-none d-sm-inline-block hover-up hover-shadow"
                 href="#tarif"
               >
-                Joy band qiling
+                Kursni xarid qiling
               </Link>
             </div>
           </div>

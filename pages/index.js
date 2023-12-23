@@ -6,8 +6,59 @@ import Typewriter from "typewriter-effect";
 import PortfolioFilter from "../components/elements/PortfolioFilter";
 import data from "../util/blogData";
 import Testimonial from "../components/slider/Testimonial";
+import { Alert, Button, Modal, Space } from "antd";
+import { useRef, useState } from "react";
+import axios from "axios";
+import { BeatLoader } from "react-spinners";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const nameRef = useRef();
+  const phoneRef = useRef();
+  const [leadStatus, setLeadStatus] = useState(false);
+  const [leadStatusAlert, setLeadStatusAlert] = useState(false);
+
+  const handleSubmit = async (e) => {
+    setLeadStatus(true);
+    e.preventDefault();
+    let user = {
+      form_id: "3132",
+      fields: {
+        name: nameRef.current.value,
+        phone: "+998" + phoneRef.current.value,
+      },
+    };
+
+    let newLeadData = await axios.post(
+      "https://api.modme.uz/v1/create_lead",
+      user
+    );
+
+    if (newLeadData) {
+      nameRef.current.value = "";
+      phoneRef.current.value = "";
+      setIsModalOpen(false);
+      setLeadStatus(false);
+      setLeadStatusAlert(true);
+      setTimeout(() => {
+        setLeadStatusAlert(false);
+      }, 2000);
+    }else{
+      setTimeout(() => {
+        setLeadStatusAlert(false);
+      }, 2000);
+    }
+  };
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <Head>
@@ -63,7 +114,10 @@ export default function Home() {
                       <div className="box-subscriber mt-40 mb-50 wow animate__animated animate__fadeInUp">
                         <div className="inner-subscriber bg-gray-800">
                           <form className="d-flex" action="#">
-                            <Link href='#tarif' className="btn btn-linear btn-arrow-right w-100">
+                            <Link
+                              href="#tarif"
+                              className="btn btn-linear btn-arrow-right w-100"
+                            >
                               Bog'lanish
                               <i className="fi-rr-arrow-small-right" />
                             </Link>
@@ -449,11 +503,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-center mt-30 mb-50">
-                  <h2 id="tarif" className="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">
+                  <h2
+                    id="tarif"
+                    className="color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp"
+                  >
                     Kursda o'qish narxlari:
                   </h2>
                 </div>
-                <div  className="row mt-50 mb-30">
+                <div className="row mt-50 mb-30">
                   <div
                     className="col-lg-4 wow animate__animated animate__fadeIn"
                     data-wow-delay=".0s"
@@ -467,9 +524,12 @@ export default function Home() {
                         <p className="text-base color-gray-500 mb-30">
                           240000 / oyiga
                         </p>
-                        <Link className="btn btn-border-linear" href="#">
-                          Bepul sinab ko'ring
-                        </Link>
+                        <Button
+                          className="btn btn-border-linear"
+                          onClick={showModal}
+                        >
+                          Boshlash
+                        </Button>
                       </div>
                       <div className="card-pricing-bottom">
                         <h6 className="color-white mb-25">Nimalar olasiz:</h6>
@@ -498,9 +558,12 @@ export default function Home() {
                         <p className="text-base color-gray-500 mb-30">
                           420000 / oyiga
                         </p>
-                        <Link className="btn btn-border-linear" href="#">
+                        <Button
+                          className="btn btn-border-linear"
+                          onClick={showModal}
+                        >
                           Boshlash
-                        </Link>
+                        </Button>
                       </div>
                       <div className="card-pricing-bottom">
                         <h6 className="color-white mb-25">Nimalar olasiz:</h6>
@@ -534,9 +597,12 @@ export default function Home() {
                         <p className="text-base color-gray-500 mb-30">
                           597000 / oyiga
                         </p>
-                        <Link className="btn btn-border-linear" href="#">
+                        <Button
+                          className="btn btn-border-linear"
+                          onClick={showModal}
+                        >
                           Boshlash
-                        </Link>
+                        </Button>
                       </div>
                       <div className="card-pricing-bottom">
                         <h6 className="color-white mb-25">What you get:</h6>
@@ -580,7 +646,7 @@ export default function Home() {
                         className="card-style-box hover-up hover-neon wow animate__animated animate__fadeIn"
                         data-wow-delay="0s"
                       >
-                       <i class="fa-regular fa-star fa-xl"></i>
+                        <i class="fa-regular fa-star fa-xl"></i>
                       </div>
                       <p>Shaxsiy kursingizni sota olasiz</p>
                     </div>
@@ -591,7 +657,7 @@ export default function Home() {
                         className="card-style-box hover-up hover-neon wow animate__animated animate__fadeIn"
                         data-wow-delay="0s"
                       >
-                       <i class="fa-brands fa-github fa-xl"></i>
+                        <i class="fa-brands fa-github fa-xl"></i>
                       </div>
                       <p>Shaxsiy kursingizni sota olasiz</p>
                     </div>
@@ -602,7 +668,7 @@ export default function Home() {
                         className="card-style-box hover-up hover-neon wow animate__animated animate__fadeIn"
                         data-wow-delay="0s"
                       >
-                       <i class="fa-solid fa-wand-magic-sparkles fa-xl"></i>
+                        <i class="fa-solid fa-wand-magic-sparkles fa-xl"></i>
                       </div>
                       <p>Shaxsiy kursingizni sota olasiz</p>
                     </div>
@@ -613,18 +679,18 @@ export default function Home() {
                         className="card-style-box hover-up hover-neon wow animate__animated animate__fadeIn"
                         data-wow-delay="0s"
                       >
-                       <i class="fa-brands fa-slack fa-xl"></i>
+                        <i class="fa-brands fa-slack fa-xl"></i>
                       </div>
                       <p>Shaxsiy kursingizni sota olasiz hghgf hghf hfty</p>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
                     <div className="cart-style-result" data-wow-delay="0s">
                       <div
                         className="card-style-box hover-up hover-neon wow animate__animated animate__fadeIn"
                         data-wow-delay="0s"
                       >
-                       <i class="fa-brands fa-figma fa-xl"></i>
+                        <i class="fa-brands fa-figma fa-xl"></i>
                       </div>
                       <p>Shaxsiy kursingizni sota olasiz</p>
                     </div>
@@ -632,6 +698,60 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {leadStatusAlert && (
+              <Space
+                direction="vertical"
+                style={{
+                  width: "75%",
+                }}
+              >
+                <Alert
+                  message="So'rovingiz qabul qilindi"
+                  type="success"
+                  showIcon
+                />
+              </Space>
+            )}
+            <Modal
+              title="Ro'yxatdan o'tish"
+              open={isModalOpen}
+              onOk={handleOk}
+              onCancel={handleCancel}
+            >
+              <div className="inner-subscriber bg-gray-800">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-group">
+                    <input
+                      className="form-control bg-gray-850 border-gray-800"
+                      type="text"
+                      ref={nameRef}
+                      placeholder="Ismingiz"
+                      required
+                    />
+                  </div>
+                  <div className=" form-group form-tel">
+                    <span>+998</span>
+                    <input
+                      className="form-control bg-gray-850 border-gray-800 form-tel-input"
+                      type='text'
+                      ref={phoneRef}
+                      maxLength="9"
+                      required
+                    />
+                  </div>
+                  {!leadStatus ? (
+                    <button type="submit" className="btn btn-linear w-100">
+                      Ma'lumot olish
+                      <i className="fi-rr-arrow-small-right" />
+                    </button>
+                  ) : (
+                    <button className="btn btn-linear w-100">
+                      <BeatLoader color="#000" />
+                    </button>
+                  )}
+                </form>
+              </div>
+            </Modal>
           </div>
         </div>
       </Layout>

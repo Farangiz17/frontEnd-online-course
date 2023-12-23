@@ -830,6 +830,7 @@ h6 {
 
 .form-group {
   margin-bottom: 24px;
+  padding: 10px;
 }
 
 .img-bdrd-16 {
@@ -6029,6 +6030,43 @@ iframe.google-map {
   top: 0px;
   left: 110%;
   min-width: 130px;
+}
+
+.ant-modal-content{
+  background-color: #131C31 !important;
+  color: #fff !important;
+}
+
+.ant-modal-title{
+  background-color: #131C31 !important;
+  color: #fff !important;
+}
+
+.ant-modal-close{
+  color: #fff !important;
+}
+
+.ant-modal-footer .ant-btn-primary{
+  display: none !important; 
+}
+
+.ant-modal-footer .ant-btn:not(.ant-btn-primary) {
+  display: none !important;
+}
+
+.form-tel{
+  position: relative;
+}
+.form-tel span{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4%;
+  font-size: 16px;
+}
+
+.form-tel input{
+  padding-left: 50px;
 }
 
 @media (max-width: 1550px) {

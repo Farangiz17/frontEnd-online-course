@@ -129,30 +129,30 @@ export default function Home() {
                       <div className="banner-img position-relative wow animate__animated animate__fadeIn">
                         <img
                           src="assets/imgs/Zufarbek_Abdurahmonov.png"
-                          alt="Genz"
+                          alt="SoffStudy - frontend dasturlash kursi"
                         />
                         <div className="pattern-1">
                           <img
                             src="assets/imgs/template/pattern-1.svg"
-                            alt="Genz"
+                            alt="SoffStudy - frontend dasturlash kursi"
                           />
                         </div>
                         <div className="pattern-2">
                           <img
                             src="assets/imgs/template/pattern-2.svg"
-                            alt="Genz"
+                            alt="SoffStudy - frontend dasturlash kursi"
                           />
                         </div>
                         <div className="pattern-3">
                           <img
                             src="assets/imgs/template/pattern-3.svg"
-                            alt="Genz"
+                            alt="SoffStudy - frontend dasturlash kursi"
                           />
                         </div>
                         <div className="pattern-4">
                           <img
                             src="assets/imgs/template/pattern-4.svg"
-                            alt="Genz"
+                            alt="SoffStudy - frontend dasturlash kursi"
                           />
                         </div>
                       </div>
@@ -340,7 +340,7 @@ export default function Home() {
                       <div className="card-blog-1 hover-up wow animate__animated animate__fadeIn">
                         <div className="card-image mb-20">
                           <Link className="post-type" href="#" />
-                          <img src={`assets/imgs/${item.img}`} alt="Genz" />
+                          <img src={`assets/imgs/${item.img}`} alt="SoffStudy - frontend dasturlash kursi" />
                         </div>
                         <div className="card-info">
                           <h6 className="color-white mt-20">{item.title}</h6>
@@ -349,7 +349,7 @@ export default function Home() {
                               <div className="box-author">
                                 <img
                                   src={`assets/imgs/page/homepage1/${item.author}`}
-                                  alt="Genz"
+                                  alt="SoffStudy - frontend dasturlash kursi"
                                 />
                                 <div className="author-info">
                                   <h6 className="color-gray-700">
@@ -428,7 +428,7 @@ export default function Home() {
                         {/* <Link href="/blog-archive">
                           <img
                             src="assets/imgs/page/homepage1/tag3.png"
-                            alt="Genz"
+                            alt="SoffStudy - frontend dasturlash kursi"
                           />
                         </Link> */}
                         <i class="fa-solid fa-person-chalkboard fa-2xl"></i>

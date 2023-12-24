@@ -1894,8 +1894,9 @@ input {
 }
 
 .card-blog-1 .card-info {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   border-radius: 8px;
+  background: linear-gradient(#222F43, #222F43) padding-box, linear-gradient(to right, rgb(14, 165, 234), rgb(11, 209, 209)) border-box;
   padding: 8px;
 }
 
@@ -6850,7 +6851,7 @@ iframe.google-map {
     padding: 10px 5px;
   }
   h1 {
-    font-size: 29px;
+    font-size: 20px!important;
     line-height: 45px;
   }
   h2 {
@@ -7142,20 +7143,20 @@ iframe.google-map {
   border-radius: 50%;
 }
 
+.cadr-info {
+  padding: 20px!important;
+}
 .cadr-info-title{
-  display: flex;
-  justify-content: start;
-  gap: 15px;
   padding-bottom: 8px;
 }
 
 .cadr-info-title span{
   font-weight: 800;
-  color: gray;
-  font-size: 18px;
+  font-size: 48px;
 }
 
 .cadr-info-title p{
+  margin-top: 10px;
   font-size: 16px;
   font-weight: 700;
 }

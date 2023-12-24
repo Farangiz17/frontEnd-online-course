@@ -12,22 +12,34 @@ const HotTopic = () => {
       img: "programmer_4.jpg",
     },
     {
-      title: "Dasturchi bo'lishni oldiga aniq maqsad qo'yganlar uchun",
+      title: "1 yil ichida Web Dasturchi bo'lishni oldiga aniq maqsad qilganlar uchun",
       article: 63,
       img: "programmer_2.jpg",
     },
     {
       title:
-        "Intizomni saqlab dars qoidalariga to'liq amal qilgan o'quvchilar uchun",
+        "200 dan ortiq shogirtlarim safiga qo‘shilmoqchi bo'lganlar uchn",
       article: 78,
       img: "programmer_3.jpg",
     },
     {
       title:
-        "Intizomni saqlab dars qoidalariga to'liq amal qilgan o'quvchilar uchun",
+        "O’zining shaxsiy IT startup loyihasiga ega bo'lmoqchi bo'lganlar uchun",
       article: 78,
       img: "programmer_3.jpg",
     },
+    {
+      title:
+        "O’z kursini zapusk qilmoqchi bo’lgan mentorlar uchun",
+      article: 78,
+      img: "programmer_3.jpg",
+    },
+    {
+      title:
+        "O’z bilimlarini oshirmoqchi bo’lgan Web Dasturchilar uchun",
+      article: 78,
+      img: "programmer_3.jpg",
+    }
   ];
 
   return (
@@ -38,7 +50,7 @@ const HotTopic = () => {
             className="mb-15 color-white wow animate__animated animate__fadeInUp"
             data-wow-delay="0s"
           >
-            KURSIMIZ KIMLARGA TO’G’RI KELADI
+            KURSIMIZ KIMLAR UCHUN
           </h5>
           {/* <p
             className="color-gray-500 mb-20 wow animate__animated animate__fadeInUp"

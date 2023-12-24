@@ -7,10 +7,10 @@ const Footer = () => {
       <footer className="">
         <div className="footer-1 bg-gray-850 border-gray-800">
          <div className="container">
-         <h2 className="color-white mb-10">Savollaringiz qoldimi ?</h2>
+         <h2 className="color-white mb-10 text-uppercase">Savollaringiz qoldimi ?</h2>
           <p>
             Bizga qo'ng'iroq qiling yoki ijtimoiy tarmoqlar orqali xabar
-            qoldiring
+            qoldiring.
           </p>
 
           <div className="footer-bottom border-gray-800">

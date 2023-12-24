@@ -15,7 +15,7 @@ const HotTopic = () => {
       title:
         "1 yil ichida Web Dasturchi bo'lishni oldiga aniq maqsad qilganlar uchun",
       article: 63,
-      img: "programmer_2.jpg",
+      img: "2.jpg",
     },
     {
       title: "200 dan ortiq shogirtlarim safiga qo‘shilmoqchi bo'lganlar uchn",
@@ -26,7 +26,7 @@ const HotTopic = () => {
       title:
         "O’zining shaxsiy IT startup loyihasiga ega bo'lmoqchi bo'lganlar uchun",
       article: 78,
-      img: "2.jpg",
+      img: "programmer_2.jpg",
     },
     {
       title: "O’z kursini zapusk qilmoqchi bo’lgan mentorlar uchun",
@@ -121,7 +121,7 @@ const HotTopic = () => {
                         </div>
                         <div className="card-info">
                           <div className="info-bottom">
-                            <h6 className="color-white mb-5">{item.title}</h6>
+                            <h6 className="color-white mb-5 fw-normal">{item.title}</h6>
                             {/* <p className="text-xs color-gray-500">
                                 {" "}
                                Siz uddalaysiz!

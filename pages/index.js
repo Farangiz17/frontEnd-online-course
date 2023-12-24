@@ -516,8 +516,8 @@ export default function Home() {
                           <hr/>
 
                           <li>Mentor tomonidan amaliyot & vazifa tekshiruvi</li>
-                          <li>Ustozdan amaliy ko'mak (xaftada 1)</li>
-                          <li>Darslarga 6 oylik kirish imkoni</li>
+                          <li>Har oylik o'tish imtihoni va nazorati</li>
+                          <li>Katta ustozdan amaliy ko'mak (xaftada 1)</li>
                         </ul>
                       </div>
                     </div>
@@ -555,23 +555,30 @@ export default function Home() {
                           Tarif o'z ichiga nima oladi:
                         </h6>
                         <ul className="list-checked">
-                          <li>To'liq video darslar Amaliyotlar</li>
-                          <li>Amaliyotlar</li>
-                          <li>
-                            Vazifalar / Vazifalar tahlili / Vazifalar tekshiruvi
-                          </li>
-                          <li>6 ta imtihon</li>
-                          <li>Ustozdan amaliy ko'mak (xaftada 1)</li>
-                          <li>2-mentor ustoz ko'magi (24/7)</li>
-                          <li>Darslarga 6 oylik kirish imkoni</li>
-                          <li>Kursdan so'ng stajirovka imkoni (300 ball +)</li>
+                          <li>To'liq video darfslar</li>
+                          <li>Amaliyot vazifalari</li>
+                          <li>Uyga Vazifalar</li>
+                          <li>Loyihalar</li>
+                          <li>Yuklab olinadigan manbaalar</li>
+                          <li>Bir umrlik foydalanish imkoniyati</li>
+                          <li>6 oy davomida 2-mentor ustoz ko'magi</li>
+
+                          <hr/>
+
+                          <li>Mentor tomonidan amaliyot & vazifa tekshiruvi</li>
+                          <li>Har oylik o'tish imtihoni va nazorati</li>
+                          <li>Katta ustozdan amaliy ko'mak (xaftada 1)</li>
+
+                          <hr/>
+
+                          <li>Kursdan so'ng amaliyot imkoni (Tekin | Pullik)</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="text-center mt-30 mb-50">
+                {/* <div className="text-center mt-30 mb-50">
                   <h2 className="text-uppercase color-linear d-inline-block mb-10 wow animate__animated animate__fadeInUp">
                     Kursdan so'ng sizni ushbu natijalar kutadi:
                   </h2>
@@ -643,7 +650,7 @@ export default function Home() {
                       <p>Shaxsiy kursingizni sota olasiz</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <Modal

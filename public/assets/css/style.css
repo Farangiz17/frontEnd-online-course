@@ -1848,12 +1848,12 @@ input {
   color: #1CC2E7 !important;
 }
 .card-style-1 .card-image .card-info {
-  /* position: absolute; */
-  bottom: 0px;
+  position: absolute;
+  bottom: -7px;
   height: 100%;
   width: 100%;
   border-radius: 8px;
-  /* background: url(../imgs/page/homepage1/bg-trans.png) repeat-x left bottom; */
+  background: url(../imgs/page/homepage1/bg-trans.png) repeat-x  bottom;
 }
 .card-style-1 .card-image .card-info.card-bg-2 {
   background: url(../imgs/page/homepage3/bg-trans.png) repeat-x left bottom;

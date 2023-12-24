@@ -313,7 +313,7 @@ export default function Home() {
                     >
                       <img
                         className="course-modul-image"
-                        src="/assets/imgs/git.png"
+                        src="/assets/imgs/1200px-Github-desktop-logo-symbol.svg.png"
                         alt=""
                       />
 
@@ -337,7 +337,7 @@ export default function Home() {
                     >
                         <img
                         className="course-modul-image"
-                        src="/assets/imgs/nexttt.png"
+                        src="/assets/imgs/nextjstr.png"
                         alt="soffstudy course modul image"
                       />
                       <h5 className="color-white mb-15">React.js & Next.js</h5>
@@ -441,7 +441,7 @@ export default function Home() {
 
                         <hr/>
 
-                        <h5 className="color-white mb-10">30% chegirma mavjud, agarda</h5>
+                        <h5 className="color-white mb-10">30% chegirma mavjud, <br/> agarda</h5>
                         <p className="text-base color-gray-500">
                           bittada 6 oylik to'lovni qilsangiz.
                         </p>
@@ -481,12 +481,18 @@ export default function Home() {
                       </label>
                       <div className="card-pricing-top border-gray-800">
                         <h3 className="color-white mb-10">Premium tarif</h3>
+                        <p className="text-base color-gray-500">
+                          420 000 so'm / oyiga
+                        </p>
+                        <hr/>
+                        <h5 className="color-white mb-10">20.6% chegirma mavjud, agarda</h5>
+                        <p className="text-base color-gray-500">
+                          bittada 6 oylik to'lovni qilsangiz.
+                        </p>
                         <p className="text-lg color-gray-500 mb-15">
-                          2000000 so’m
+                          <del>2 520 000 so'm</del> |  2 000 000 so’m
                         </p>
-                        <p className="text-base color-gray-500 mb-30">
-                          420000 / oyiga
-                        </p>
+
                         <Button
                           className="btn btn-border-linear"
                           onClick={showModal}
@@ -496,7 +502,7 @@ export default function Home() {
                       </div>
                       <div className="card-pricing-bottom">
                         <h6 className="color-white mb-25">
-                          Nimalarga ega bo'lasiz
+                          Tarif o'z ichiga nima oladi:
                         </h6>
                         <ul className="list-checked">
                           <li>To'liq video darfslar</li>
@@ -526,11 +532,16 @@ export default function Home() {
                       </label>
                       <div className="card-pricing-top border-gray-800">
                         <h3 className="color-white mb-10">Gold Premium </h3>
-                        <p className="text-lg color-gray-500 mb-15">
-                          3000000 so’m
+                        <p className="text-base color-gray-500">
+                          597 000 so'm / oyiga
                         </p>
-                        <p className="text-base color-gray-500 mb-30">
-                          597000 / oyiga
+                        <hr/>
+                        <h5 className="color-white mb-10">16.2% chegirma mavjud, agarda</h5>
+                        <p className="text-base color-gray-500">
+                          bittada 6 oylik to'lovni qilsangiz.
+                        </p>
+                        <p className="text-lg color-gray-500 mb-15">
+                          <del>3 582 000 so'm</del> |  3 000 000 so’m
                         </p>
                         <Button
                           className="btn btn-border-linear"
@@ -541,7 +552,7 @@ export default function Home() {
                       </div>
                       <div className="card-pricing-bottom">
                         <h6 className="color-white mb-25">
-                          Nimalarga ega bo'lasiz
+                          Tarif o'z ichiga nima oladi:
                         </h6>
                         <ul className="list-checked">
                           <li>To'liq video darslar Amaliyotlar</li>

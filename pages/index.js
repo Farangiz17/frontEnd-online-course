@@ -10,6 +10,8 @@ import { Alert, Button, Modal, Space, message } from "antd";
 import { useRef, useState } from "react";
 import axios from "axios";
 import { BeatLoader } from "react-spinners";
+import Snowfall from 'react-snowfall';
+
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -78,6 +80,7 @@ export default function Home() {
         <meta property="og:site_name" content="SoffStudy.uz" />
       </Head>
       <Layout>
+      <Snowfall snowflakeCount={100} color="white" snowflakeDiv="❆" />
         <div className="cover-home1">
           <div className="container">
             <div className="row">
@@ -462,8 +465,8 @@ export default function Home() {
                           <li>Uyga Vazifalar</li>
                           <li>Loyihalar</li>
                           <li>Yuklab olinadigan manbaalar</li>
-                          <li>6 oy davomida 2-mentor ustoz ko'magi</li>
                           <li>Bir umrlik foydalanish imkoniyati</li>
+                          <li>6 oy davomida 2-mentor ustoz ko'magi</li>
                         </ul>
                       </div>
                     </div>
@@ -496,14 +499,18 @@ export default function Home() {
                           Nimalarga ega bo'lasiz
                         </h6>
                         <ul className="list-checked">
-                          <li>To'liq video darslar Amaliyotlar</li>
-                          <li>Amaliyotlar</li>
-                          <li>
-                            Vazifalar / Vazifalar tahlili / Vazifalar tekshiruvi
-                          </li>
-                          <li>6 ta imtihon</li>
+                          <li>To'liq video darfslar</li>
+                          <li>Amaliyot vazifalari</li>
+                          <li>Uyga Vazifalar</li>
+                          <li>Loyihalar</li>
+                          <li>Yuklab olinadigan manbaalar</li>
+                          <li>Bir umrlik foydalanish imkoniyati</li>
+                          <li>6 oy davomida 2-mentor ustoz ko'magi</li>
+
+                          <hr/>
+
+                          <li>Mentor tomonidan amaliyot & vazifa tekshiruvi</li>
                           <li>Ustozdan amaliy ko'mak (xaftada 1)</li>
-                          <li>2-mentor ustoz ko'magi (24/7)</li>
                           <li>Darslarga 6 oylik kirish imkoni</li>
                         </ul>
                       </div>

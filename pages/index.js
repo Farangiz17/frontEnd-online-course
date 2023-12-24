@@ -18,12 +18,23 @@ export default function Home() {
   const nameRef = useRef();
   const phoneRef = useRef();
   const [leadStatus, setLeadStatus] = useState(false);
+  const [type, setType] = useState('standart');
 
   const handleSubmit = async (e) => {
     setLeadStatus(true);
     e.preventDefault();
+    let form_id 
+    if(type == 'standart'){
+      form_id = 3402
+    }
+    if(type == 'premium'){
+      form_id = 3403
+    }
+    if(type == 'gold'){
+      form_id = 3404
+    }
     let user = {
-      form_id: "3132",
+      form_id,
       fields: {
         name: nameRef.current.value,
         phone: "+998" + phoneRef.current.value,
@@ -51,7 +62,8 @@ export default function Home() {
     }
   };
 
-  const showModal = () => {
+  const showModal = (type) => {
+    setType(type)
     setIsModalOpen(true);
   };
   const handleOk = () => {
@@ -450,7 +462,7 @@ export default function Home() {
                         </p>
                         <Button
                           className="btn btn-border-linear"
-                          onClick={showModal}
+                          onClick={() => showModal('standart')}
                         >
                           Boshlash
                         </Button>
@@ -495,7 +507,7 @@ export default function Home() {
 
                         <Button
                           className="btn btn-border-linear"
-                          onClick={showModal}
+                          onClick={() => showModal('premium')}
                         >
                           Boshlash
                         </Button>
@@ -545,7 +557,7 @@ export default function Home() {
                         </p>
                         <Button
                           className="btn btn-border-linear"
-                          onClick={showModal}
+                          onClick={() => showModal('gold')}
                         >
                           Boshlash
                         </Button>

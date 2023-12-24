@@ -310,7 +310,7 @@ export default function Home() {
                     >
                       <img
                         className="course-modul-image"
-                        src="/assets/imgs/git.png"
+                        src="/assets/imgs/1200px-Github-desktop-logo-symbol.svg.png"
                         alt=""
                       />
 
@@ -334,7 +334,7 @@ export default function Home() {
                     >
                         <img
                         className="course-modul-image"
-                        src="/assets/imgs/nexttt.png"
+                        src="/assets/imgs/nextjstr.png"
                         alt="soffstudy course modul image"
                       />
                       <h5 className="color-white mb-15">React.js & Next.js</h5>

@@ -10,31 +10,36 @@ const Testimonial = () => {
             img: "Hamidullo.png",
             name:"Hamidullo Ne'matullayev",
             level:'React Developer',
+            job:"Madaniyat vazirligiga qarashli tahririyoti (dasturchi texnik)",
             description:"Soff Study o'quv markaziga omad tilayman! (Shogirt qancha yuksalgani bilan shogirtligicha qoladi"
         },
         {
             img: "Alisher.png",
             name:"Alisher Mirsaidov",
             level:'React Developer',
-            description:"Juda ham maqul kelgan. Mentorlari xushmuomila"
+            description:"Juda ham maqul kelgan. Mentorlari xushmuomila",
+            job:"Razgoor.uz online do'kon asoschisi"
         },
         {
             img: "James.png",
             name:"Jasur Boboqulov",
             level:'React Developer',
-            description:"Eng zo'r jamoa ko'plab imkoniyatlar va yaxshi ustoz"
+            description:"Eng zo'r jamoa ko'plab imkoniyatlar va yaxshi ustoz",
+            job:"ICT-Jobs IT Companiya"
         },
         {
             img: "Nurulloh.png",
             name:"Nurulloh Ubaydullayev",
             level:'FrontEnd ( React | ReactNative ) Developer',
-            description:"Dasturchi bo'lib o'z o'rnimni topishimda katta yordam bergan maskan"
+            description:"Dasturchi bo'lib o'z o'rnimni topishimda katta yordam bergan maskan",
+            job:'SmartBase'
         },
         {
             img: "B.png",
             name:"Mehroj Normamatov",
             level:'Primetech Solutions IT kompaniyasi asoschisi va direktori',
-            description:"Zo'r imkoniyatlar maskani (dasturlashga kirib kelishimga sababchilardan biri desam adashmayman)"
+            description:"Zo'r imkoniyatlar maskani (dasturlashga kirib kelishimga sababchilardan biri desam adashmayman)",
+            job:'Primetech SolutionsIT Company'
         },
     ];
 
@@ -88,8 +93,9 @@ const Testimonial = () => {
                                 <div className="box-author box-author-copy mb-20">
                                     <img src={`assets/imgs/${item.img}`} alt="Genz" />
                                     <div className="author-info">
-                                        <h6 className="color-gray-700">{item.name}</h6><span className="color-gray-700 text-sm">{item.level}</span>
+                                        <h6 className="color-gray-700">{item.name}  </h6><span className="color-gray-700 text-sm">{item.level}</span>
                                     </div>
+                                    <p className='color-gray-700 text-center' >{item.job}</p>
                                 </div>
                                 <div className="card-info">
                                     <p className="color-gray-500">{item.description}</p>

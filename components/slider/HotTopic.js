@@ -12,13 +12,13 @@ const HotTopic = () => {
       img: "programmer_4.jpg",
     },
     {
-      title: "1 yil ichida Web Dasturchi bo'lishni oldiga aniq maqsad qilganlar uchun",
+      title:
+        "1 yil ichida Web Dasturchi bo'lishni oldiga aniq maqsad qilganlar uchun",
       article: 63,
       img: "programmer_2.jpg",
     },
     {
-      title:
-        "200 dan ortiq shogirtlarim safiga qo‘shilmoqchi bo'lganlar uchn",
+      title: "200 dan ortiq shogirtlarim safiga qo‘shilmoqchi bo'lganlar uchn",
       article: 78,
       img: "programmer_3.jpg",
     },
@@ -26,20 +26,18 @@ const HotTopic = () => {
       title:
         "O’zining shaxsiy IT startup loyihasiga ega bo'lmoqchi bo'lganlar uchun",
       article: 78,
-      img: "programmer_3.jpg",
+      img: "2.jpg",
     },
     {
-      title:
-        "O’z kursini zapusk qilmoqchi bo’lgan mentorlar uchun",
+      title: "O’z kursini zapusk qilmoqchi bo’lgan mentorlar uchun",
       article: 78,
-      img: "programmer_3.jpg",
+      img: "3.jpg",
     },
     {
-      title:
-        "O’z bilimlarini oshirmoqchi bo’lgan Web Dasturchilar uchun",
+      title: "O’z bilimlarini oshirmoqchi bo’lgan Web Dasturchilar uchun",
       article: 78,
-      img: "programmer_3.jpg",
-    }
+      img: "5.jpg",
+    },
   ];
 
   return (
@@ -110,15 +108,17 @@ const HotTopic = () => {
                   <SwiperSlide className="swiper-slide" key={i}>
                     <div className="card-style-1">
                       <div className="card-image">
-                        <img
-                          style={{
-                            minHeight: "200px",
-                            objectFit: "cover",
-                            height: "100%",
-                          }}
-                          src={`assets/imgs/${item.img}`}
-                          alt="Genz"
-                        />
+                        <div className="tropic">
+                          <img
+                            style={{
+                              minHeight: "200px",
+                              objectFit: "cover",
+                              height: "100%",
+                            }}
+                            src={`assets/imgs/${item.img}`}
+                            alt="Genz"
+                          />
+                        </div>
                         <div className="card-info">
                           <div className="info-bottom">
                             <h6 className="color-white mb-5">{item.title}</h6>

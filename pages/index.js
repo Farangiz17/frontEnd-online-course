@@ -162,25 +162,26 @@ export default function Home() {
                           </p>
                         </div>
                       </div> */}
-                     <div style={{
-                      display:'flex',
-                      justifyContent:'center'
-                     }} >
-                     <div className="box-subscriber mt-40 mb-100 wow animate__animated animate__fadeInUp ">
-                        <div className="inner-subscriber bg-gray-800">
-                          <form className="d-flex" action="#">
-                            <Link
-                              href="#tarif"
-                              className="btn btn-linear btn-arrow-right w-100"
-                            >
-                             BATAFSIL MA'LUMOT
-                              <i className="fi-rr-arrow-small-right" />
-                            </Link>
-                          </form>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <div className="box-subscriber mt-40 mb-100 wow animate__animated animate__fadeInUp ">
+                          <div className="inner-subscriber bg-gray-800">
+                            <form className="d-flex" action="#">
+                              <Link
+                                href="#tarif"
+                                className="btn btn-linear btn-arrow-right w-100"
+                              >
+                                BATAFSIL MA'LUMOT
+                                <i className="fi-rr-arrow-small-right" />
+                              </Link>
+                            </form>
+                          </div>
                         </div>
                       </div>
-                     </div>
-                     
                     </div>
                   </div>
                 </div>
@@ -409,38 +410,50 @@ export default function Home() {
                 <div className="row mt-10 mb-10 ">
                   {data.map((item, i) => (
                     <>
-                      <div className={`${item.id !== 0 ? 'd-none' : ''}  col-lg-6 wow animate__animated animate__fadeIn${item.animation}`}   key={i}>
-                      <div className="card-blog-1  hover-up">
-                        <div className="card-image">
-                          <img
-                            src={`assets/imgs/${item.img}`}
-                            alt="SoffStudy - frontend dasturlash kursi"
-                          />
-                        </div>
-                        <div className="card-info cadr-info">
-                          <div className="cadr-info-title">
-                            <span>0{item.id}</span>
-                            <p className="color-white text-uppercase">
-                              {item.title}
-                            </p>
+                      <div
+                        className={`${
+                          item.id !== 0 ? "d-none" : ""
+                        }  col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-12  wow animate__animated animate__fadeIn${
+                          item.animation
+                        }`}
+                        key={i}
+                      >
+                        <div className="card-blog-1 card-lesson   hover-up">
+                          <div className="card-image image-none">
+                            <img
+                              src={`assets/imgs/${item.img}`}
+                              alt="SoffStudy - frontend dasturlash kursi"
+                            />
                           </div>
-                          <h6 className="color-white fw-normal mt-2">
-                            {item.description}
-                          </h6>
+                          <div className="card-info cadr-info">
+                            <div className="cadr-info-title">
+                              {/* <span>0{item.id}</span> */}
+                              <h5 className="color-white text-uppercase ">
+                                {item.title}
+                              </h5>
+                            </div>
+                            <h6 className="color-white fw-normal mt-2">
+                              {item.description}
+                            </h6>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className={` ${item.id !== 0 ? '' : 'd-none'} col-lg-6 wow animate__animated animate__fadeIn${item.animation} `}>
-                    <div className="cadr-info-number">
-                    <span >0{item.id}</span>
-                    </div>
-                  </div>
+                      <div
+                        className={` ${
+                          item.id !== 0 ? "" : "d-none"
+                        } col-6 wow animate__animated animate__fadeIn${
+                          item.animation
+                        } card-number-none  `}
+                      >
+                        <div className={`cadr-info-number d-flex justify-content-${item.animation !== "Left" ? 'start' : 'end'} `}>
+                          <span>0{item.id}</span>
+                        </div>
+                      </div>
                     </>
                   ))}
-                
                 </div>
                 {/* Natijalar */}
-               
+
                 <div className="text-center mt-30 mb-50">
                   <h2
                     id="tarif"
@@ -618,8 +631,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div>
             <Modal

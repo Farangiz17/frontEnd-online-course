@@ -69,7 +69,7 @@ const HotTopic = () => {
           <div className="box-swiper">
             <div className="swiper-container swiper-group-5">
               <Swiper
-                slidesPerView={4}
+                slidesPerView={2}
                 spaceBetween={10}
                 loop={false}
                 autoplay={{

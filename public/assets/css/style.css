@@ -6298,6 +6298,9 @@ iframe.google-map {
   }
 }
 @media (max-width: 991.98px) {
+  .image-none{
+    display: none;
+  }
   .footer .width-20 {
     width: 50%;
   }
@@ -6508,6 +6511,7 @@ iframe.google-map {
     width: 170px;
     font-size: 14px !important;
   }
+ 
   .footer .width-20 {
     width: 100%;
   }
@@ -6798,6 +6802,38 @@ iframe.google-map {
     display: block;
   }
 }
+.card-lesson{
+  display: flex;
+  justify-self: center;
+}
+@media (max-width: 510px){
+  .image-none{
+    display: block;
+
+  }
+  .card-lesson{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+  }
+  .card-lesson .card-info{
+    text-align: center;
+  }
+  .card-lesson .card-info h6{
+    margin: 0 auto;
+  }
+  .card-number-none{
+    display: none;
+  }
+}
+@media (max-width: 576px){
+  .image-none{
+    display: block;
+  }
+  .card-number-none{
+    display: none;
+  }
+}
 @media (max-width: 499.98px) {
   .banner-home3 .banner-img {
     margin-top: 80px;
@@ -7014,6 +7050,17 @@ iframe.google-map {
   }
 }
 @media (max-width: 449.98px) {
+  .cadr-info-number span{
+    font-size: 80px !important;
+  }
+ 
+  .card-blog-1 {
+    padding: 0;
+    
+  }
+  .card-blog-1 .card-image .card-info .cadr-info{
+    padding: 0 !important;
+  }
   .box-quantity {
     flex-wrap: wrap;
   }
@@ -7173,17 +7220,16 @@ iframe.google-map {
   padding-bottom: 8px;
 }
 
-.cadr-info-title span{
+.cadr-info-title h5{
   font-weight: 800;
-  font-size: 48px;
+  padding: 5px 0;
 }
 
 .cadr-info-number{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .cadr-info-number span{

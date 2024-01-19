@@ -89,7 +89,7 @@ export default function Home() {
         <meta property="og:site_name" content="SoffStudy.uz" />
       </Head>
       <Layout>
-        <Snowfall snowflakeCount={70} color="#0EACE6" snowflakeDiv="❆" />
+        {/* <Snowfall snowflakeCount={70} color="#0EACE6" snowflakeDiv="❆" /> */}
         <div className="cover-home1">
           <div className="container">
             <div className="row">
@@ -406,10 +406,11 @@ export default function Home() {
                 <h3 className="text-uppercase color-linear mb-30 text-center d-block mb-10 wow animate__animated animate__fadeInUp">
                   Ta'lim jarayoni qanday olib boriladi?
                 </h3>
-                <div className="row mt-10 mb-10">
+                <div className="row mt-10 mb-10 ">
                   {data.map((item, i) => (
-                    <div className="col-lg-6" key={i}>
-                      <div className="card-blog-1  hover-up wow animate__animated animate__fadeIn">
+                    <>
+                      <div className={`${item.id !== 0 ? 'd-none' : ''}  col-lg-6 wow animate__animated animate__fadeIn${item.animation}`}   key={i}>
+                      <div className="card-blog-1  hover-up">
                         <div className="card-image">
                           <img
                             src={`assets/imgs/${item.img}`}
@@ -418,7 +419,7 @@ export default function Home() {
                         </div>
                         <div className="card-info cadr-info">
                           <div className="cadr-info-title">
-                            <span>0{i + 1}</span>
+                            <span>0{item.id}</span>
                             <p className="color-white text-uppercase">
                               {item.title}
                             </p>
@@ -429,7 +430,14 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
+                    <div className={` ${item.id !== 0 ? '' : 'd-none'} col-lg-6 wow animate__animated animate__fadeIn${item.animation} `}>
+                    <div className="cadr-info-number">
+                    <span >0{item.id}</span>
+                    </div>
+                  </div>
+                    </>
                   ))}
+                
                 </div>
                 {/* Natijalar */}
                

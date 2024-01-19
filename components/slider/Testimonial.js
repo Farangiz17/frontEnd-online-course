@@ -48,11 +48,11 @@ const Testimonial = () => {
         <>
             <div className="swiper-container swiper-group-3">
                 <Swiper
-                    slidesPerView={3}
-                    spaceBetween={30}
+                    slidesPerView={2}
+                    spaceBetween={60}
                     loop={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 4500,
                         disableOnInteraction: false
                     }}
                     navigation={{
@@ -81,8 +81,8 @@ const Testimonial = () => {
                             spaceBetween: 30,
                         },
                         1350: {
-                            slidesPerView: 3,
-                            spaceBetween: 30,
+                            slidesPerView: 2,
+                            spaceBetween: 60,
                         },
                     }}
                     className="swiper-wrapper pt-5"
@@ -90,12 +90,12 @@ const Testimonial = () => {
                     {data.map((item, i) => (
                         <SwiperSlide className="swiper-slide"  key={i}>
                             <div className="card-testimonials card-testimonials-copy bg-gray-850 border-gray-800 hover-up">
-                                <div className="box-author box-author-copy mb-20">
+                                <div className="box-author box-author-copy mb-20 ">
                                     <img src={`assets/imgs/${item.img}`} alt="Genz" />
                                     <div className="author-info">
                                         <h6 className="color-gray-700">{item.name}  </h6><span className="color-gray-700 text-sm">{item.level}</span>
+                                    <p className='color-gray-700' >{item.job}</p>
                                     </div>
-                                    <p className='color-gray-700 text-center' >{item.job}</p>
                                 </div>
                                 <div className="card-info">
                                     <p className="color-gray-500">{item.description}</p>

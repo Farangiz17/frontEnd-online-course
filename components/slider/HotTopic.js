@@ -10,33 +10,37 @@ const HotTopic = () => {
       title: "Dasturlash sohasiga endi kirganlar uchun",
       article: 38,
       img: "programmer_4.jpg",
+      icon: "fa-solid fa-user-plus"
     },
     {
-      title:
-        "1 yil ichida Web Dasturchi bo'lishni oldiga aniq maqsad qilganlar uchun",
+      title: "1 yil ichida Web Dasturchi bo'lmoqchilar",
       article: 63,
       img: "2.jpg",
+      icon: "fa-solid fa-user-tie"
     },
     {
-      title: "200 dan ortiq shogirtlarim safiga qo‘shilmoqchi bo'lganlar uchn",
+      title: "200 dan ortiq shogirtlarim safida bo'lganlar uchn",
       article: 78,
       img: "programmer_3.jpg",
+      icon: "fa-solid fa-hand-holding-hand"
     },
     {
-      title:
-        "O’zining shaxsiy IT startup loyihasiga ega bo'lmoqchi bo'lganlar uchun",
+      title: "O’zining IT startup loyihasiga ega bo'lmoqchilar uchun",
       article: 78,
       img: "programmer_2.jpg",
+      icon : "fa-solid fa-laptop-code"
     },
     {
       title: "O’z kursini zapusk qilmoqchi bo’lgan mentorlar uchun",
       article: 78,
       img: "3.jpg",
+      icon: "fa-solid fa-bolt"
     },
     {
-      title: "O’z bilimlarini oshirmoqchi bo’lgan Web Dasturchilar uchun",
+      title: "O’z bilimlarini oshirmoqchilar uchun",
       article: 78,
       img: "5.jpg",
+      icon: "fa-solid fa-book"
     },
   ];
 
@@ -107,7 +111,15 @@ const HotTopic = () => {
                 {data.map((item, i) => (
                   <SwiperSlide className="swiper-slide" key={i}>
                     <div className="card-style-1">
-                      <div className="card-image">
+                      <div className="carousel-course-card">
+                        <i class={`${item.icon} fa-xl icon-kurs `}></i>
+                        <div className="info-bottm">
+                          <p className="color-white fw-normal text-center">
+                            {item.title}
+                          </p>
+                        </div>
+                      </div>
+                      {/* <div className="card-image">
                         <div className="tropic">
                           <img
                             style={{
@@ -118,17 +130,14 @@ const HotTopic = () => {
                             src={`assets/imgs/${item.img}`}
                             alt="Genz"
                           />
+                          <i class="fa-solid fa-user-plus fa-xl"></i>
                         </div>
                         <div className="card-info">
                           <div className="info-bottom">
                             <h6 className="color-white mb-5 fw-normal">{item.title}</h6>
-                            {/* <p className="text-xs color-gray-500">
-                                {" "}
-                               Siz uddalaysiz!
-                              </p> */}
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </SwiperSlide>
                 ))}

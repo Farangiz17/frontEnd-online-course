@@ -17,7 +17,7 @@ const data = [
     },
     {
         id: 3,
-        description: "Har bir video darlikdan so'ng ko'rsatilgan (uyga) vazifani qilishingiz kerak",
+        description: "Har bir video darslikdan so'ng ko'rsatilgan (uyga) vazifani qilishingiz kerak",
         img: "dars-jarayoni-3.jpg",
         title: "Vazifa",
         author: "author.jpg",

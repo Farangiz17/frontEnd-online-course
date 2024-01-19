@@ -1814,6 +1814,24 @@ input {
   position: relative;
   width: 100%;
 }
+
+.carousel-course-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.icon-kurs{
+  color: #1CC2E7;
+  padding: 8px;
+  font-size: 35px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .card-style-1:hover h6 {
   color: #1CC2E7 !important;
 }
@@ -2059,7 +2077,7 @@ input {
   border-width: 1px;
   border-style: solid;
   border-radius: 16px;
-  height: 320px;
+  min-height: 210px;
 }
 
 .card-testimonials-copy{
@@ -2068,7 +2086,7 @@ input {
 }
 
 .card-testimonials-copy .card-info p{
-  text-align: center;
+  text-align: left;
 }
 
 @-webkit-keyframes load7 {
@@ -5450,21 +5468,26 @@ input {
   border-style: solid;
 }
 
+.box-author-copy{
+  display: flex;
+}
+
 .box-author {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  gap: 10px;
+  /* flex-direction: column; */
 }
 .box-author img {
   display: inline-block;
   margin-right: 15px;
-  height: 120px !important;
-  width: 120px !important;
-  border-radius: 50% !important;
+  height: 60px !important ;
+  width: 60px !important ;
+  border-radius: 50% ;
 }
 .box-author .author-info {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .readmore {

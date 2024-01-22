@@ -624,6 +624,7 @@ export default function Home() {
               open={isModalOpen}
               onOk={handleOk}
               onCancel={handleCancel}
+             
             >
               <div className="inner-subscriber ">
                 <form onSubmit={handleSubmit} className="text-center mb-2">

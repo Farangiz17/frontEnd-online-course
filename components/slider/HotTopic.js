@@ -10,37 +10,37 @@ const HotTopic = () => {
       title: "Dasturlash sohasiga endi kirganlar uchun",
       article: 38,
       img: "programmer_4.jpg",
-      icon: "fa-solid fa-user-plus"
+      icon: "fa-solid fa-user-plus",
     },
     {
       title: "1 yil ichida Web Dasturchi bo'lmoqchilar",
       article: 63,
       img: "2.jpg",
-      icon: "fa-solid fa-user-tie"
+      icon: "fa-solid fa-user-tie",
     },
     {
-      title: "200 dan ortiq shogirtlarim safida bo'lganlar uchn",
+      title: "200 dan ortiq shogirtlarim safida bo'lganlar uchun",
       article: 78,
       img: "programmer_3.jpg",
-      icon: "fa-solid fa-hand-holding-hand"
+      icon: "fa-solid fa-hand-holding-hand",
     },
     {
       title: "O’zining IT startup loyihasiga ega bo'lmoqchilar uchun",
       article: 78,
       img: "programmer_2.jpg",
-      icon : "fa-solid fa-laptop-code"
+      icon: "fa-solid fa-laptop-code",
     },
     {
       title: "O’z kursini zapusk qilmoqchi bo’lgan mentorlar uchun",
       article: 78,
       img: "3.jpg",
-      icon: "fa-solid fa-bolt"
+      icon: "fa-solid fa-bolt",
     },
     {
       title: "O’z bilimlarini oshirmoqchilar uchun",
       article: 78,
       img: "5.jpg",
-      icon: "fa-solid fa-book"
+      icon: "fa-solid fa-book",
     },
   ];
 
@@ -113,31 +113,12 @@ const HotTopic = () => {
                     <div className="card-style-1">
                       <div className="carousel-course-card">
                         <i class={`${item.icon} fa-xl icon-kurs `}></i>
-                        <div className="info-bottm">
+                        <div className="info-bottom">
                           <p className="color-white fw-normal text-center">
                             {item.title}
                           </p>
                         </div>
                       </div>
-                      {/* <div className="card-image">
-                        <div className="tropic">
-                          <img
-                            style={{
-                              minHeight: "200px",
-                              objectFit: "cover",
-                              height: "100%",
-                            }}
-                            src={`assets/imgs/${item.img}`}
-                            alt="Genz"
-                          />
-                          <i class="fa-solid fa-user-plus fa-xl"></i>
-                        </div>
-                        <div className="card-info">
-                          <div className="info-bottom">
-                            <h6 className="color-white mb-5 fw-normal">{item.title}</h6>
-                          </div>
-                        </div>
-                      </div> */}
                     </div>
                   </SwiperSlide>
                 ))}

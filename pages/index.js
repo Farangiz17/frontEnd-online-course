@@ -245,20 +245,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                {/* <h2 className="text-uppercase color-linear d-inline-block mt-40 wow animate__animated animate__fadeInUp">
-                  Kursda nimalar o'rganasiz?
-                </h2>
-                <PortfolioFilter col={4} /> */}
-
-                {/* <div className="text-center mb-50">
-                  <Link
-                    href="#tarif"
-                    className="btn btn-linear btn-load-more wow animate__animated animate__zoomIn"
-                  >
-                    Ro'yxatdan o'tish
-                    <i className="fi-rr-arrow-small-right" />
-                  </Link>
-                </div> */}
+                {/* Kurs dasturi */}
                 <h2 className="text-uppercase text-center color-linear mb-30 d-block mb-10 wow animate__animated animate__fadeInUp">
                   Kurs dasturi
                 </h2>
@@ -452,7 +439,6 @@ export default function Home() {
                     </>
                   ))}
                 </div>
-                {/* Natijalar */}
 
                 <div className="text-center mt-30 mb-50">
                   <h2
@@ -620,7 +606,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
+                           {/* Feedback */}
                 <div id="students_result">
                   <h3 className="text-uppercase color-linear mb-30 d-inline-block mt-40 wow animate__animated animate__fadeInUp">
                     O'quvchilarimning fikrlari

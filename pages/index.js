@@ -460,9 +460,9 @@ export default function Home() {
                           240 000 so'm / oyiga
                         </p>
 
-                        <hr />
+                        {/* <hr /> */}
 
-                        <h5 className="color-white mb-10">
+                        {/* <h5 className="color-white mb-10">
                           30% chegirma mavjud, <br /> agarda
                         </h5>
                         <p className="text-base color-gray-500">
@@ -470,9 +470,9 @@ export default function Home() {
                         </p>
                         <p className="text-lg color-gray-500 mb-15">
                           <del>1 440 000 so'm</del> | 1 000 000 so’m
-                        </p>
+                        </p> */}
                         <Button
-                          className="btn btn-border-linear"
+                          className="btn btn-border-linear mt-20"
                           onClick={() => showModal("standart")}
                         >
                           Boshlash
@@ -507,7 +507,7 @@ export default function Home() {
                         <p className="text-base color-gray-500">
                           420 000 so'm / oyiga
                         </p>
-                        <hr />
+                        {/* <hr />
                         <h5 className="color-white mb-10">
                           20.6% chegirma mavjud, agarda
                         </h5>
@@ -516,10 +516,10 @@ export default function Home() {
                         </p>
                         <p className="text-lg color-gray-500 mb-15">
                           <del>2 520 000 so'm</del> | 2 000 000 so’m
-                        </p>
+                        </p> */}
 
                         <Button
-                          className="btn btn-border-linear"
+                          className="btn btn-border-linear mt-20"
                           onClick={() => showModal("premium")}
                         >
                           Boshlash
@@ -560,7 +560,7 @@ export default function Home() {
                         <p className="text-base color-gray-500">
                           597 000 so'm / oyiga
                         </p>
-                        <hr />
+                        {/* <hr />
                         <h5 className="color-white mb-10">
                           16.2% chegirma mavjud, agarda
                         </h5>
@@ -569,9 +569,9 @@ export default function Home() {
                         </p>
                         <p className="text-lg color-gray-500 mb-15">
                           <del>3 582 000 so'm</del> | 3 000 000 so’m
-                        </p>
+                        </p> */}
                         <Button
-                          className="btn btn-border-linear"
+                          className="btn btn-border-linear mt-20"
                           onClick={() => showModal("gold")}
                         >
                           Boshlash
